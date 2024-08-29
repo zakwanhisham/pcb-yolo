@@ -1,3 +1,13 @@
-names:
-  - pcb-detection
-nc: 1
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['1k_resistor', '8k_resistor', 'capacitor', 'led', 'regulator', 'switch', 'transistor']
+
+roboflow:
+  workspace: pcbboarddetection
+  project: pcb-detection-ubdx2
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/pcbboarddetection/pcb-detection-ubdx2/dataset/2
